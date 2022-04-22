@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Sound Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" > -->
+    <link rel="icon" type="image/png" href="./speaker.png">
+    <link rel="stylesheet" href="./font.css">
+    <style>
+        *{
+            font-family: 'Poppins',sans-serif;
+        }
+        body{
+            background-color: #a164df;
+        }
+        .images{
+            display: flex;
+            justify-content: center;
+        }
+        .image{
+            display: none;
+            width: 400px;
+            height: 500px;
+            object-fit: contain;
+        }
+        .buttons{
+            display: flex;
+            flex-wrap: wrap ;
+            justify-content: center;
+            margin: 0px;
+        }
+        .btn{
+            display: none;
+            background-color: #6c38a0;
+            color: white;
+            border: none;
+            padding: 20px 35px;
+            margin: 5px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            opacity: 0.7;
+            box-shadow: rgba(15, 12, 12, 0.815) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <img id="image" class="image" src="./speaker.png" alt="speaker">
+    </div>
+    <div class="buttons">
+        <button id="booSound" class="btn">Boo</button>
+        <button id="applauseSound" class="btn">Applause</button>
+        <button id="gaspSound" class="btn">Gasp</button>
+        <button id="tadaSound" class="btn">Tada</button>
+        <button id="victorySound" class="btn">Victory</button>
+        <button id="wrongSound" class="btn">Wrong</button>
+    </div>
+
+    <audio id="sound"></audio>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
